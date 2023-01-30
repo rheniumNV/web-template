@@ -7,7 +7,7 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 
 const clientConfig: Configuration & { devServer?: WebpackDevServerConfig } = {
   mode: isDevelopment ? "development" : "production",
-  entry: "./src/index.ts",
+  entry: "./src/index.tsx",
   cache: true,
   target: "web",
   output: {
